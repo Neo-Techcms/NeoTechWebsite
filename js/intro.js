@@ -1,26 +1,56 @@
 
-t1 =  setTimeout(function()
-{ 
-  document.getElementById("maintext").innerHTML = "I am Ayush";
-}, 3000);
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+  timeout = setTimeout(function() {
+      document.getElementById("maintext").innerHTML = "Stars Right?";
+      document.getElementById("secondtext").innerHTML = "Are they connected?";
+    }, 5000);
+  
+    timeout2 = setTimeout(function() {
+        document.getElementById("maintext").innerHTML = "Nah...";
+        document.getElementById("secondtext").innerHTML = "You just saw Humanity in a nutshell";
+      }, 10000);
+  
+      timeout4 = setTimeout(function() {
+          document.getElementById("maintext").innerHTML = "Who am I?"
+          document.getElementById("secondtext").style.opacity = "0.0";
+        }, 15000);
+    
+  
+    timeout3 = setTimeout(function() {
+        document.getElementById("maintext").innerHTML = "I am Ayush"
+        document.getElementById("secondtext").style.opacity = "1";
+        document.getElementById("secondtext").innerHTML = "Just one of those stars.";
+      }, 20000);
+  
+ }else
+ {
+  timeout = setTimeout(function() {
+    document.getElementById("lookup").style.paddingLeft="40%";
+      document.getElementById("maintext").innerHTML = "Stars Right?";
+      document.getElementById("secondtext").innerHTML = "Are they connected?";
+    }, 5000);
+  
+    timeout2 = setTimeout(function() {
+      document.getElementById("lookup").style.paddingLeft="70%";
+        document.getElementById("maintext").innerHTML = "Nah...";
+        document.getElementById("secondtext").innerHTML = "You just saw Humanity in a nutshell";
+      }, 10000);
+  
+      timeout4 = setTimeout(function() {
+        document.getElementById("lookup").style.paddingLeft="40%";
+          document.getElementById("maintext").innerHTML = "Who am I?"
+          document.getElementById("secondtext").style.opacity = "0.0";
+        }, 15000);
+    
+  
+    timeout3 = setTimeout(function() {
+      document.getElementById("lookup").style.paddingLeft="40%";
+        document.getElementById("maintext").innerHTML = "I am Ayush"
+        document.getElementById("secondtext").style.opacity = "1";
+        document.getElementById("secondtext").innerHTML = "Just one of those stars.";
+      }, 20000);
+  }
 
-t2 =  setTimeout(function()
-{ 
-  document.getElementById("maintext").innerHTML = "Let me Introduce You To Pen";
-}, 6000);
-
-t3 =  setTimeout(function()
-{ 
-  document.getElementById("maintext").innerHTML = "A Social Media Platform";
-}, 9000);
-
-t4 =  setTimeout(function()
-{ 
-  document.getElementById("maintext").innerHTML = "Made In India";
-}, 12000);
+    
 
 
-t4 =  setTimeout(function()
-{ 
-  window.location = "./logsin.html";
-}, 15000);
